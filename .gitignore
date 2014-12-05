@@ -1,3 +1,7 @@
 /node_modules
 /client/bower_components
 .DS_Store
+
+
+## Yelp API keys
+/server/env/config.js

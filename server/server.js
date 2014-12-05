@@ -9,22 +9,16 @@ var yelp = require('./yelp');
 app.use(express.static(__dirname + '/../client/'))
 
 
-//post request for food search. needs to send back top 3 results as JSON
-// app.post('/getmefood', function (req, res) {
-//   var url = req.param('url');
-//   request.getHtmlAndCssLinks(url, req, res);
-// });
+// post request for food search. sends back top 3 results as JSON
+app.post('/imhungry', function (req, res) {
+  // var search = req.param('search');
+  // var location = req.param('location');
+  //...
+
+  //receivng json request from client with keys search, loc, distance, stars
+  yelp.searchYelp(search, location, distance, stars, req, res);
+});
 
 
 
 app.listen(3000);
-
-
-
-
-
-//users should be able to access all functionality without signing in
-//index.html
-//likes
-//login
-//signup
