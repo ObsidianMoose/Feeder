@@ -21,6 +21,7 @@ angular.module('EAT', [
 ])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+  $urlRouterProvider.otherwise('/search');
   $stateProvider
     .state('search', {
       templateUrl:'search.html',
@@ -50,6 +51,7 @@ angular.module('EAT', [
       controller: 'ResultsController',
       url: '/searchResults',
     })
+    $urlRouterProvider.when('/','/search');
     
     // We add our $httpInterceptor into the array
     // of interceptors. Think of it like middleware for your ajax calls
