@@ -164,7 +164,8 @@ angular.module('EAT', [
       })
       .catch(function(err) {
         console.log('FAILED LIKING'); //cry yourself to sleep if failure
-      });
+      })
+      $scope.likes[ind] = false;
     }
     if($scope.dislikes[ind]){
       Likes.addDislike(foodPlace)
@@ -173,7 +174,8 @@ angular.module('EAT', [
       })
       .catch(function(err) {
         console.log('FAILED DISLIKING'); //cry yourself to sleep if failure
-      });
+      })
+      $scope.dislikes[ind] = false;
     }
   }
 })
