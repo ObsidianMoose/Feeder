@@ -208,6 +208,9 @@ button:focus {
 .singleResult {
   margin-bottom:  8%;
 }
+.likeFeature {
+  width: 200px;
+}
 .likeFeature p{
   display: inline-block;
   position: relative;
