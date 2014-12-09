@@ -128,8 +128,8 @@ angular.module('EAT.services', [])
       data: userObj
     })
     .then(function(resp){
-      console.log('RESPONDING', resp);
-      return resp.data.token;
+      console.log('123RESPONDING', resp);
+      return resp.data;
     })
     .catch(function(err){
       console.log(err, 'CAUGHTCAUGHT!');

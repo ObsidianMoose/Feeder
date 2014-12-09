@@ -43,7 +43,8 @@ module.exports = {
     		newUser = {username: username, password: password};
     		dbHelpers.addUserToDatabase(newUser, function(user){
     			var token = jwt.encode(user, 'secret');
-    			res.json({token: token}); 
+    			res.json({token: token,
+            username: username}); 
     			res.end('success')});
     	}
     })

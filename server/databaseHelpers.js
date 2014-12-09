@@ -93,7 +93,7 @@ var isInLikes = function(username, restaurant, callback) {
 	getLikes(username, function(likes){
 		console.log(likes);
 		for (var i = 0; i < likes.length; i++) {
-			if (likes[i] === restaurant){
+			if (likes[i].name === restaurant.name){
 				result = true;
 			}
 		}
