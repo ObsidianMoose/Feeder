@@ -106,7 +106,8 @@ app.get('/dislikes', function(req, res, next) {
 	db.getDislikes(username, function(dislikes) {res.send(dislikes)});
 });
 
-app.listen(3000);
+var port = process.env.PORT || 3000;
+app.listen(port);
 
 
 
