@@ -6,4 +6,3 @@ consumer_key: "RTmlWWKM1e0yJ03HBRNcrA",
  token: "lUakp9DqE6NVwNKNtqybo-qt6-ymqfwY",
  token_secret: "UgCZb8K5vHzaHMTvhr8_uNNG7rs"
 };
-
