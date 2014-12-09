@@ -1,10 +1,12 @@
 <!-- likes.html -->
 
-<div ng-controller="LikesController">
-	<div ng-repeat="foodPlace in likeBucket">
+<div ng-controller="LikesController" id="likesView">
+	<div ng-repeat="foodPlace in likeBucket" class="singleResult">
+    <div class="resultImgAndAddress">  
       <img height="100" width="100" source="EAT" src="{{foodPlace.image_url}}">
-	  <h2>{{foodPlace.name}}</h2>
-	  <h2>{{foodPlace.rating}} Stars</h2>
-	  <h3 ng-repeat="row in foodPlace.address">{{row}}</h3>
+  	  <h2 class="restaurantName">{{foodPlace.name}}</h2>
+      <h3 ng-repeat="row in foodPlace.address">{{row}}</h3>
+  	  <h2 class="resultRating">{{foodPlace.rating}} Stars</h2>
+    </div>
 	</div>
 </div>

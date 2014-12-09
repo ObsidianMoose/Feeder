@@ -106,13 +106,13 @@ input:focus {
 }
 .nav ul {
   font-family: 'Montserrat', sans-serif;
-  width: 94%;
+  width: 92%;
   height: 30px;
   border-radius: 5px;
-  padding-left: 6%;
   margin: 0 auto;
   background-color: #FDBF30;
   padding-top: 3%;
+  padding-left: 8%;
 }
 .nav li {
   list-style-type: none;
@@ -143,6 +143,9 @@ input:focus {
 }
 #searchView, #loginView, #signupView {
   text-align: center;
+}
+#loginView a, #signupView a {
+  color: #358979;
 }
 #viewOuter {
   height: auto;
@@ -183,7 +186,7 @@ button:focus {
   position: relative;
   left:39%;
 }
-#resultsView {
+#resultsView, #likesView {
   font-weight: 300;
   color: #21564B;
 }
