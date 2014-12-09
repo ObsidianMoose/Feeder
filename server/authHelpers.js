@@ -1,4 +1,4 @@
-var bcrypt   = require('bcrypt'),
+var bcrypt   = require('bcryptjs'),
     SALT_WORK_FACTOR  = 10;
 
 var comparePasswords = function (candidatePassword, savedPassword, callback) {
