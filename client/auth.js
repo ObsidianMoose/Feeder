@@ -20,8 +20,9 @@ angular.module('EAT.auth', [])
 
   $scope.signup = function () {
     Auth.signup($scope.user)
-      .then(function (token) {
-        $window.localStorage.setItem('com.eat', token);
+      .then(function (data) {
+        $window.localStorage.setItem('com.eat', data.token);
+        $window.localStorage.setItem('username', data.username);
         $location.path('/');
       })
       .catch(function (error) {
