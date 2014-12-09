@@ -36,7 +36,7 @@ angular.module('EAT.services', [])
   var likes = {};
   var dislikes = {};
   var addLike = function(likesObj) {
-    console.log('this is a likesObj',likesObj)
+    // console.log('this is a likesObj',likesObj)
     return $http({
       method: 'POST',
       url: '/like',
@@ -50,7 +50,7 @@ angular.module('EAT.services', [])
     });
   };
   var getLikes = function(likesObj) {
-    console.log('09887', likesObj)
+    // console.log('09887', likesObj)
     return $http({
       method: 'POST',
       url: '/likes',
@@ -65,7 +65,7 @@ angular.module('EAT.services', [])
     });
   };
   var addDislike = function(likesObj) {
-    console.log('this is a dislikesObj',likesObj)
+    // console.log('this is a dislikesObj',likesObj)
     return $http({
       method: 'POST',
       url: '/dislike',
