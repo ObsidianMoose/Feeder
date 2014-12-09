@@ -1,5 +1,5 @@
 var mongojs = require('mongojs');
-    bcrypt   = require('bcrypt'),
+    bcrypt   = require('bcryptjs'),
     SALT_WORK_FACTOR  = 10;
 
 //first parameter is the name of the database, second is an array of collections
