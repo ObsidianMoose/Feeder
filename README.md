@@ -1,7 +1,4 @@
 Feeder
-
-A simplified food app that helps you find eateries closest to you quickly.
-UI is mobile friendly.
 =======
 A food search app that helps users find food quickly and easily via the Yelp and Google Geocoder APIs.
 
